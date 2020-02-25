@@ -1,4 +1,6 @@
 <?php
+
+
 ?>
 
 <!doctype html>
@@ -17,6 +19,7 @@
     <h1>Form to test MySQL</h1>
 
     <form method="post">
+        <button type="submit" class="btn btn-primary" name="refresh">clear post</button>
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="email">ID:</label>
@@ -31,11 +34,11 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="street">First name:</label>
-                    <input type="text" name="firstname" id="street" class="form-control">
+                    <input type="text" name="first_name" id="first_name" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="streetnumber">Last name:</label>
-                    <input type="text" id="username" name="lastname" class="form-control">
+                    <input type="text" id="last_name" name="last_name" class="form-control">
                 </div>
             </div>
             <div class="form-row">
@@ -45,7 +48,7 @@
                 </div>
                 <div class="form-group col-md-6">
                     <label for="zipcode">Linkdin</label>
-                    <input type="text" id="linkdin" name="linkdin" class="form-control">
+                    <input type="text" id="linkedin" name="linkedin" class="form-control">
                 </div>
             </div>
             <div class="form-row">
@@ -61,7 +64,7 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="city">Preferred language</label>
-                    <input type="text" id="preflang" name="preflang" class="form-control">
+                    <input type="text" id="preferred_language" name="preferred_language" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="zipcode">Avatar</label>
@@ -81,11 +84,11 @@
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="city">Quote Author</label>
-                    <input type="text" id="quoteauthor" name="quoteauthor" class="form-control">
+                    <input type="text" id="quote_author" name="quote_author" class="form-control">
                 </div>
                 <div class="form-group col-md-6">
                     <label for="zipcode"> Created at: </label>
-                    <input type="text" id="createdat" name="createdat" class="form-control">
+                    <input type="text" id="created_at" name="created_at" class="form-control">
                 </div>
             </div>
 

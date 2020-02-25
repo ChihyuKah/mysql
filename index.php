@@ -4,6 +4,7 @@ ini_set('display_errors', "1");
 ini_set('display_startup_errors', "1");
 error_reporting(E_ALL);
 
+
 function whatIsHappening()
 {
     echo '<h2>$_GET</h2>';
@@ -17,9 +18,11 @@ function whatIsHappening()
 }
 
 whatIsHappening();
-
-$connechi = new connectChi();
-$connechi->openConnection();
 require 'controller/homeController.php';
+
+
+
+$controller = new homepageController();
+$controller->render($_GET, $_POST);
 
 
