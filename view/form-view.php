@@ -95,6 +95,7 @@
         </fieldset>
         <button type="submit" class="btn btn-primary" name="submit">Send</button>
 
+    </form>
 </div>
 
 <style>
