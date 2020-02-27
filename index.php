@@ -19,11 +19,17 @@ function whatIsHappening()
 
 whatIsHappening();
 require 'controller/homeController.php';
+require 'controller/profileController.php';
 
 
 
 
-$controller = new homepageController();
-$controller->render($_GET, $_POST);
 
+if(isset($_GET["user"])){
+    $profile = new profileController();
+    $profile->profileControl();
+} else {
+    $controller = new homepageController();
+    $controller->render($_GET, $_POST);
+}
 

@@ -63,14 +63,6 @@
                 </div>
             </div>
             <div class="form-row">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown button
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
-                    </div>
-                </div>
                 <div class="form-group col-md-6 dropdown-toggle">
                     <label for="city">Preferred language</label>
                     <input type="text" id="preferred_language" name="preferred_language" class="form-control">
@@ -102,7 +94,9 @@
             </div>
 
         </fieldset>
+        <form method="get">
         <button type="submit" class="btn btn-primary" name="submit" value="1">Send</button>
+        </form>
     </form>
 
     <table class="" style="border: 1px solid black;">
@@ -146,7 +140,7 @@
         <?php foreach ($students as $print): ?>
         <tr>
             <td>
-                <?php echo $print ["first_name"]?>
+                <a href="?user=<?php echo $print ["id"]?>"><?php echo $print ["first_name"]?></a>
             </td>
             <td>
                 <?php echo $print ["last_name"]?>
