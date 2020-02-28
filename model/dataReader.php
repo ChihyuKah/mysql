@@ -9,7 +9,6 @@ class dataReader extends connection
         $stmt = $this->openConnection()->prepare($sql);
         $result = $stmt->execute([]);
         $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
-        echo $user;
         return $user;
 
     }
@@ -19,8 +18,13 @@ class dataReader extends connection
         $sql = "SELECT * FROM students.student WHERE id";
         $statement = $this->openConnection()->prepare($sql);
         $userID = $_GET["user"];
-        $userID = $statement->execute([$userID]);
-        return $statement->fetch(PDO:: FETCH_ASSOC);
+        $result = $statement->execute([$userID]);
+        $singleUser = $statement->fetch(PDO:: FETCH_ASSOC);
+        return $userID;
+
+
+
     }
+
 
 }
